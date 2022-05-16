@@ -1,64 +1,8 @@
-# React Table Pagination (Server side) with Search example using react-table v7
+#### Instructions
 
-Build  React Table Pagination (Server side) application with Search in a React Hooks Application using `react-table` v7 for data table and `Material-UI` for pagination.
+Use the [GitHub Search API](https://docs.github.com/en/free-pro-team@latest/rest/guides/traversing-with-pagination) with pagination to find all the repositories that match the query `nodejs`. Display results 10 by 10 in a view in the application you built in Step 1. Results should be displayed in a table (it doesn't have to look good) and, the pagination should be fully functional on the front-end side.
 
-![react-table-pagination-server-side-with-search-example](react-table-pagination-server-side-with-search-example.png)
-
-For instruction, please visit:
-> [React Table Pagination (Server side) with Search example](https://bezkoder.com/react-table-pagination-server-side/)
-
-Server side Pagination for this app:
-> [Node.js Express Pagination with MySQL](https://bezkoder.com/node-js-sequelize-pagination-mysql/)
-
-> [Node.js Express Pagination with PostgreSQL](https://bezkoder.com/node-js-pagination-postgresql/)
-
-> [Node.js Express Pagination with MongoDB](https://bezkoder.com/node-js-mongodb-pagination/)
-
-> [Spring Boot Pagination and Filter example](https://bezkoder.com/spring-boot-pagination-filter-jpa-pageable/)
-
-> [Spring Boot MongoDB Pagination example with Spring Data](https://bezkoder.com/spring-boot-mongodb-pagination/)
-
-More Practice:
-> [React Table example: CRUD App with react-table v7](https://bezkoder.com/react-table-example-hooks-crud/)
-
-> [React Hooks CRUD example with Axios and Web API](https://bezkoder.com/react-hooks-crud-axios-api/)
-
-> [React Pagination using Hooks example](https://bezkoder.com/react-pagination-hooks/)
-
-> [React Hooks File Upload example](https://bezkoder.com/react-hooks-file-upload/)
-
-> [React Hooks: JWT Authentication & Authorization example](https://bezkoder.com/react-hooks-jwt-auth/)
-
-> [React + Redux + Hooks: JWT Authentication & Authorization example](https://bezkoder.com/react-hooks-redux-login-registration-example/)
-
-Fullstack with Node.js Express:
-> [React + Node.js Express + MySQL](https://bezkoder.com/react-node-express-mysql/)
-
-> [React + Node.js Express + PostgreSQL](https://bezkoder.com/react-node-express-postgresql/)
-
-> [React + Node.js Express + MongoDB](https://bezkoder.com/react-node-express-mongodb-mern-stack/)
-
-Fullstack with Spring Boot:
-> [React + Spring Boot + MySQL](https://bezkoder.com/react-spring-boot-crud/)
-
-> [React + Spring Boot + PostgreSQL](https://bezkoder.com/spring-boot-react-postgresql/)
-
-> [React + Spring Boot + MongoDB](https://bezkoder.com/react-spring-boot-mongodb/)
-
-Fullstack with Django:
-> [React.js Hooks + Django Rest Framework](https://bezkoder.com/django-react-hooks/)
-
-Serverless with Firebase:
-> [React Firebase Hooks: CRUD App with Realtime Database example](https://bezkoder.com/react-firebase-hooks-crud/)
-
-> [React Hooks Firestore example: CRUD App](https://bezkoder.com/react-hooks-firestore/)
-
-Integration (run back-end & front-end on same server/port)
-> [How to integrate React.js with Spring Boot](https://bezkoder.com/integrate-reactjs-spring-boot/)
-
-> [Integrate React with Node.js Express on same Server/Port](https://bezkoder.com/integrate-react-express-same-server-port/)
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Please note for for demo purpose this app will consume the api build in part 1 so the [Backend Service](https://github.com/dheerajsh/pomelo-cc) must be running 
 
 ### Set port
 .env
@@ -72,8 +16,7 @@ In the project directory, you can run:
 
 ```
 npm install
-# or
-yarn install
+
 ```
 
 or
@@ -82,8 +25,7 @@ or
 
 ```
 npm start
-# or
-yarn start
+
 ```
 
 Open [http://localhost:8081](http://localhost:8081) to view it in the browser.
