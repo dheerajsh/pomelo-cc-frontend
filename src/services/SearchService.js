@@ -1,7 +1,7 @@
 import http from "../http-common";
 
 const getAll = (params) => {
-  return http.get("http://localhost:4000/api/github/search", { params });
+  return http.get("http://localhost:4000/git/search", { params });
 };
 
 

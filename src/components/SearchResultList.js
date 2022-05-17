@@ -42,17 +42,19 @@ const SearchResultsList = (props) => {
   const retrieveResults = () => {
     const params = getRequestParams(searchTitle, page, pageSize);
 
-    GitSearchService.getAll(params)
-      .then((response) => {
-        const { items, per_page, total } = response.data;
-
-        setResults(items);
-        setCount(Math.floor(total/per_page));
-
-      })
-      .catch((e) => {
-        alert(e.message);
-      });
+    if(searchTitle) {
+      GitSearchService.getAll(params)
+        .then((response) => {
+          const { items, per_page, total } = response.data;
+  
+          setResults(items);
+          setCount(Math.floor(total/per_page));
+  
+        })
+        .catch((e) => {
+          alert(e.message);
+        });
+    }
   };
 
   useEffect(retrieveResults, [page, pageSize]);
@@ -110,7 +112,7 @@ const SearchResultsList = (props) => {
           <input
             type="text"
             className="form-control"
-            placeholder="Search by title"
+            placeholder="Search"
             value={searchTitle}
             onChange={onChangeSearchQuery}
           />
