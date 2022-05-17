@@ -3,6 +3,11 @@ import Pagination from "@material-ui/lab/Pagination";
 import GitSearchService from "../services/SearchService";
 import { useTable } from "react-table";
 
+/**
+ * Component to show the results in tabular form paginated manner
+ * @param props 
+ * @returns 
+ */
 const SearchResultsList = (props) => {
   const [tutorials, setResults] = useState([]);
   const [searchTitle, setSearchResults] = useState("");
@@ -16,6 +21,10 @@ const SearchResultsList = (props) => {
 
   tutorialsRef.current = tutorials;
 
+  /**
+   * every time search query is changed by user
+   * @param  e 
+   */
   const onChangeSearchQuery = (e) => {
     const searchTitle = e.target.value;
     setSearchResults(searchTitle);
@@ -59,13 +68,10 @@ const SearchResultsList = (props) => {
 
   useEffect(retrieveResults, [page, pageSize]);
 
-
   const findByQuery = () => {
     setPage(1);
     retrieveResults();
   };
-
-
 
   const handlePageChange = (event, value) => {
     setPage(value);
@@ -76,6 +82,9 @@ const SearchResultsList = (props) => {
     setPage(1);
   };
 
+  /**
+   * defination of headers in the table
+   */
   const columns = useMemo(
     () => [
       {
